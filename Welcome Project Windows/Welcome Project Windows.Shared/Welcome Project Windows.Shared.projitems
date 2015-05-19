@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>9a7bc193-abd5-4e99-88c8-734a50b8813f</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Welcome_Project_Windows</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="$(MSBuildThisFileDirectory)App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)CloudAction.xaml.cs">
+      <DependentUpon>CloudAction.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)fhconfig.json" />
+    <Content Include="$(MSBuildThisFileDirectory)icons\back-arrow%402x.png" />
+    <Content Include="$(MSBuildThisFileDirectory)icons\back-arrow.png" />
+    <Content Include="$(MSBuildThisFileDirectory)icons\login_bg.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)icons\logo%402x.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Library\fontawesome-webfont.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="$(MSBuildThisFileDirectory)CloudAction.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+</Project>
