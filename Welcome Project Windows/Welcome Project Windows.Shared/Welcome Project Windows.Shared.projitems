@@ -32,6 +32,7 @@
     <Content Include="$(MSBuildThisFileDirectory)icons\back-arrow.png" />
     <Content Include="$(MSBuildThisFileDirectory)icons\login_bg.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)icons\logo%402x.png" />
+    <Content Include="$(MSBuildThisFileDirectory)icons\nodejs.png" />
     <Content Include="$(MSBuildThisFileDirectory)Library\fontawesome-webfont.ttf" />
   </ItemGroup>
   <ItemGroup>

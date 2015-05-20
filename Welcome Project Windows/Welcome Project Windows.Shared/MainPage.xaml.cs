@@ -1,7 +1,4 @@
-﻿using FHSDK;
-using FHSDK81.Phone;
-using System.Diagnostics;
-using Windows.UI.ViewManagement;
+﻿using FHSDK81.Phone;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Input;
@@ -33,6 +30,11 @@ namespace Welcome_Project_Windows
         private void Data_Tapped(object sender, TappedRoutedEventArgs e)
         {
             Frame.Navigate(typeof(DataAction));
+        }
+
+        private void Node_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(NodeAction));
         }
     }
 }

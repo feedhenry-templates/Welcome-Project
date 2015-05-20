@@ -27,6 +27,7 @@
                         </StackPanel>
                     </StackPanel>
                     <StackPanel Margin="0,40,0,0">
+                        <Image Source="icons/nodejs.png"/>
                         <TextBlock TextWrapping="Wrap" >FeedHenry Apps are made much more powerful by our Node.js cloud code. 
                             You have all of the functionality of Node available to you including all of its modules. This means 
                             you get powerful responsive business logic doing all the heavy lifting for your application.</TextBlock>
