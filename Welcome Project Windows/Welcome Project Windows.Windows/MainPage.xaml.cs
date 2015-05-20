@@ -55,13 +55,12 @@ namespace Welcome_Project_Windows
 
         private void Cloud_Tapped(object sender, TappedRoutedEventArgs e)
         {
-            Debug.WriteLine("Cloud action clicked!");
             Frame.Navigate(typeof(CloudAction));
         }
 
-        private void Grid_Tapped(object sender, TappedRoutedEventArgs e)
+        private void Data_Tapped(object sender, TappedRoutedEventArgs e)
         {
-            Debug.WriteLine("Data browser clicked!");
+            Frame.Navigate(typeof(DataAction));
         }
     }
 }

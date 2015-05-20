@@ -18,6 +18,9 @@
     <Compile Include="$(MSBuildThisFileDirectory)CloudAction.xaml.cs">
       <DependentUpon>CloudAction.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)DataAction.xaml.cs">
+      <DependentUpon>DataAction.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="$(MSBuildThisFileDirectory)fhconfig.json" />
@@ -28,6 +31,10 @@
     <Content Include="$(MSBuildThisFileDirectory)Library\fontawesome-webfont.ttf" />
   </ItemGroup>
   <ItemGroup>
+    <Page Include="$(MSBuildThisFileDirectory)DataAction.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="$(MSBuildThisFileDirectory)CloudAction.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
