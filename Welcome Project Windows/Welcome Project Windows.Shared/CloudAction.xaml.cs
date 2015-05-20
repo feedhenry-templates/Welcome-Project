@@ -1,41 +1,34 @@
-﻿//using FHSDK;
+﻿using FHSDK;
 using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
+using System.ComponentModel;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
-using Windows.UI.Xaml.Navigation;
-
-// The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace Welcome_Project_Windows
 {
-    /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
-    /// </summary>
-    public sealed partial class CloudAction : Page
+    public sealed partial class CloudAction : Page, INotifyPropertyChanged
     {
+        public event PropertyChangedEventHandler PropertyChanged;
+        public string Message { get; set; }
+        
         public CloudAction()
         {
             this.InitializeComponent();
+            DataContext = this;
         }
 
-        private async void Button_Click(object sender, RoutedEventArgs e)
+        private async void Call_Cloud(object sender, RoutedEventArgs e)
         {
-            var message = "Error";
-            //FHResponse res = await FH.Cloud("hello", "GET", null, null);
-            //if (res.StatusCode == System.Net.HttpStatusCode.OK)
-            //{
-            //    message = (string)res.GetResponseAsDictionary()["msg"];
-            //}
+            Message = "Error";
+            FHResponse res = await FH.Cloud("hello", "POST", null, null);
+            if (res.StatusCode == System.Net.HttpStatusCode.OK)
+            {
+                Message = (string)res.GetResponseAsDictionary()["text"];
+            }
+
+            PropertyChanged(this, new PropertyChangedEventArgs("Message"));
+            result.Visibility = Visibility.Visible;
         }
     }
 }

@@ -1,6 +1,5 @@
-﻿//using FHSDK;
-//using FHSDK.Services;
-//using FHSDK81.Phone;
+﻿using FHSDK;
+using FHSDK81.Phone;
 using System.Diagnostics;
 using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
@@ -25,7 +24,7 @@ namespace Welcome_Project_Windows
 
         private async void InitApp()
         {
-            //await FHClient.Init();
+            await FHClient.Init();
         }
 
         void Current_SizeChanged(object sender, Windows.UI.Core.WindowSizeChangedEventArgs e)
@@ -39,6 +38,7 @@ namespace Welcome_Project_Windows
                     grid.RowDefinitions.Clear();
                     grid.ColumnDefinitions.Add(new ColumnDefinition() { Width = new GridLength(1, GridUnitType.Star) });
                     grid.ColumnDefinitions.Add(new ColumnDefinition() { Width = new GridLength(1, GridUnitType.Star) });
+                    buttons.Margin = new Thickness(30);
 
                     break;
 
@@ -46,6 +46,7 @@ namespace Welcome_Project_Windows
                     grid.ColumnDefinitions.Clear();
                     grid.RowDefinitions.Add(new RowDefinition() { Height = new GridLength(3, GridUnitType.Star) });
                     grid.RowDefinitions.Add(new RowDefinition() { Height = new GridLength(7, GridUnitType.Star) });
+                    buttons.Margin = new Thickness(60);
 
                     break;
             }

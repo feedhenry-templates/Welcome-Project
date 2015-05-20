@@ -18,8 +18,8 @@
         </Grid.ColumnDefinitions>
 
         <Image Source="icons/logo@2x.png" VerticalAlignment="Center" Margin="40,0,80,0" Grid.Column="0" Grid.Row="0"/>
-        
-        <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Column="1" Grid.Row="1" Margin="30">
+
+        <Grid Name="buttons" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Column="1" Grid.Row="1" Margin="30">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition />
                 <ColumnDefinition />
