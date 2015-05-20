@@ -1,4 +1,5 @@
 ﻿using FHSDK81.Phone;
+using System.Diagnostics;
 using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
@@ -71,15 +72,15 @@ namespace Welcome_Project_Windows
             buttons.RowDefinitions.Clear();
             buttons.ColumnDefinitions.Clear();
             int count = 0;
-            for (int i = 0; i < x; i++)
+            for (int j = 0; j < y; j++)
             {
-                buttons.ColumnDefinitions.Add(new ColumnDefinition());
+                buttons.RowDefinitions.Add(new RowDefinition());
 
-                for (int j = 0; j < y; j++)
+                for (int i = 0; i < x; i++)
                 {
-                    if (i == 0)
+                    if (j == 0)
                     {
-                        buttons.RowDefinitions.Add(new RowDefinition());
+                        buttons.ColumnDefinitions.Add(new ColumnDefinition());
                     }
 
                     var grid = buttons.Children[count++];
