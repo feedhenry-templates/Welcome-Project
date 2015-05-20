@@ -21,6 +21,9 @@
     <Compile Include="$(MSBuildThisFileDirectory)DataAction.xaml.cs">
       <DependentUpon>DataAction.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)IntegrationAction.xaml.cs">
+      <DependentUpon>IntegrationAction.xaml</DependentUpon>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)MainPage.xaml.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)NodeAction.xaml.cs">
       <DependentUpon>NodeAction.xaml</DependentUpon>
@@ -33,6 +36,15 @@
     <Content Include="$(MSBuildThisFileDirectory)icons\login_bg.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)icons\logo%402x.png" />
     <Content Include="$(MSBuildThisFileDirectory)icons\nodejs.png" />
+    <Content Include="$(MSBuildThisFileDirectory)icons\plugins\loggly.png" />
+    <Content Include="$(MSBuildThisFileDirectory)icons\plugins\mixpanel.png" />
+    <Content Include="$(MSBuildThisFileDirectory)icons\plugins\mysql.png" />
+    <Content Include="$(MSBuildThisFileDirectory)icons\plugins\oracle.png" />
+    <Content Include="$(MSBuildThisFileDirectory)icons\plugins\paypal.png" />
+    <Content Include="$(MSBuildThisFileDirectory)icons\plugins\s3.png" />
+    <Content Include="$(MSBuildThisFileDirectory)icons\plugins\salesforce.png" />
+    <Content Include="$(MSBuildThisFileDirectory)icons\plugins\sendgrid.png" />
+    <Content Include="$(MSBuildThisFileDirectory)icons\plugins\stripe.png" />
     <Content Include="$(MSBuildThisFileDirectory)Library\fontawesome-webfont.ttf" />
   </ItemGroup>
   <ItemGroup>
@@ -41,6 +53,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="$(MSBuildThisFileDirectory)CloudAction.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)IntegrationAction.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

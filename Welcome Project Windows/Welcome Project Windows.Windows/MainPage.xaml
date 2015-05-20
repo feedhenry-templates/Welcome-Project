@@ -68,7 +68,7 @@
                 <TextBlock Text="POWERED BY NODEJS" VerticalAlignment="Bottom" Grid.Row="1" Grid.Column="0" Margin="7,4"/>
                 <TextBlock Text="Cloud code" VerticalAlignment="Bottom" Grid.Row="2" Grid.Column="0" Margin="7,0,7,10" FontFamily="Segoe UI Light"/>
             </Grid>
-            <Grid Grid.Row="1" Grid.Column="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="#FFDA552C" Margin="10">
+            <Grid Grid.Row="1" Grid.Column="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="#FFDA552C" Margin="10" Tapped="Integration_Tapped">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>

@@ -1,0 +1,64 @@
+﻿<Page
+    x:Class="Welcome_Project_Windows.IntegrationAction"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Welcome_Project_Windows"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    FontSize="{ThemeResource ThemeFontSize}" FontFamily="Segoe UI">
+
+    <StackPanel Background="#FFDA552C">
+        <Grid Margin="{ThemeResource BodyMargin}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="{ThemeResource GutterMarginWindows}"/>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="{ThemeResource GutterMarginPhone}" />
+            </Grid.ColumnDefinitions>
+
+            <Image Source="icons/back-arrow@2x.png" Width="60" Height="60" VerticalAlignment="Top" Tapped="BackButton_Click"/>
+            <Grid Grid.Column="1">
+                <StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="icons/back-arrow@2x.png" Width="60" Height="60" Visibility="{ThemeResource VisibleWhenPhone}" Tapped="BackButton_Click"/>
+                        <StackPanel Margin="{ThemeResource TitleMargin}">
+                            <TextBlock FontFamily="Segoe UI Semilight" FontSize="24" Grid.Column="1">CLOUD INTEGRATION</TextBlock>
+                            <TextBlock FontSize="20" Grid.Column="1" Grid.Row="1">Use plugins</TextBlock>
+                        </StackPanel>
+                    </StackPanel>
+                    <StackPanel Margin="0,40,0,0">
+                        <TextBlock TextWrapping="Wrap" >
+                            You can easily integrate with all of your existing back-end systems using 
+                            Cloud Plugins. Check out the the App Studio to see how to connect to Databases, Messaging, Analytics, SaaS, eCommerce, Logging, Data Storage, File Storage, Testing, Tools and File Storage. A few examples including:
+                        </TextBlock>
+                        <Grid Background="White" RenderTransformOrigin="0.5,0.1">
+                            <Grid.RenderTransform>
+                                <CompositeTransform ScaleX="0.7" ScaleY="0.65"/>
+                            </Grid.RenderTransform>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition />
+                                <ColumnDefinition />
+                                <ColumnDefinition />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+                            <Image Source="icons/plugins/mysql.png" Grid.Column="0"/>
+                            <Image Source="icons/plugins/oracle.png" Grid.Column="1"/>
+                            <Image Source="icons/plugins/stripe.png" Grid.Column="2" RenderTransformOrigin="0.5,0.5"/>
+                            <Image Source="icons/plugins/loggly.png" Grid.Column="0" Grid.Row="1"/>
+                            <Image Source="icons/plugins/s3.png" Grid.Column="1" Grid.Row="1"/>
+                            <Image Source="icons/plugins/mixpanel.png" Grid.Column="2" Grid.Row="1"/>
+                            <Image Source="icons/plugins/salesforce.png" Grid.Column="0" Grid.Row="2"/>
+                            <Image Source="icons/plugins/sendgrid.png" Grid.Column="1" Grid.Row="2"/>
+                            <Image Source="icons/plugins/paypal.png" Grid.Column="2" Grid.Row="2"/>
+                        </Grid>
+                    </StackPanel>
+                </StackPanel>
+            </Grid>
+        </Grid>
+
+    </StackPanel>
+</Page>

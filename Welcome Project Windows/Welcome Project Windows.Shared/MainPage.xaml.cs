@@ -36,5 +36,10 @@ namespace Welcome_Project_Windows
         {
             Frame.Navigate(typeof(NodeAction));
         }
+
+        private void Integration_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(IntegrationAction));
+        }
     }
 }
