@@ -20,6 +20,7 @@ namespace Welcome_Project_Windows
             Window.Current.SizeChanged += Current_SizeChanged;
             this.InitializeComponent();
             this.InitApp();
+            Current_SizeChanged(null, null);
         }
 
         private async void InitApp()

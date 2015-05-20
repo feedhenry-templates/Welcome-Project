@@ -6,9 +6,107 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    FontSize="12" FontFamily="Segoe UI">
 
-    <Grid>
+    <Grid Name="grid">
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="icons/login_bg.jpg"/>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="8*" />
+        </Grid.RowDefinitions>
 
-    </Grid>
-</Page>
+        <Image Name="logo" Source="icons/logo@2x.png" VerticalAlignment="Center" Grid.Column="0" Grid.Row="0" Margin="15"/>
+
+        <Grid Name="buttons" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Column="1" Grid.Row="1" Margin="15">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0" Grid.Column="0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="#FF009BAD" Margin="3" Tapped="Cloud_Tapped">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <TextBlock FontFamily="{StaticResource FontAwesome}" Text="&#xf0c2;" FontSize="50" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock Text="CLOUD ACTION" VerticalAlignment="Bottom" Grid.Row="1" Grid.Column="0" Margin="7,4"/>
+                <TextBlock Text="Try it now" VerticalAlignment="Bottom" Grid.Row="2" Grid.Column="0" Margin="7,0,7,10" FontFamily="Segoe UI Light"/>
+            </Grid>
+            <Grid Grid.Row="0" Grid.Column="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="#FF613CBD" Margin="3" Tapped="Grid_Tapped">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <TextBlock FontFamily="{StaticResource FontAwesome}" Text="&#xf0ce;" FontSize="50" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock Text="DATA BROWSER" VerticalAlignment="Bottom" Grid.Row="1" Grid.Column="0" Margin="7,4"/>
+                <TextBlock Text="Use MongoDB" VerticalAlignment="Bottom" Grid.Row="2" Grid.Column="0" Margin="7,0,7,10" FontFamily="Segoe UI Light"/>
+            </Grid>
+            <Grid Grid.Row="0" Grid.Column="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="#FF9F01AD" Margin="3">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <TextBlock FontFamily="{StaticResource FontAwesome}" Text="&#xf135;" FontSize="40" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock Text="POWERED BY NODEJS" VerticalAlignment="Bottom" Grid.Row="1" Grid.Column="0" Margin="7,4"/>
+                <TextBlock Text="Cloud code" VerticalAlignment="Bottom" Grid.Row="2" Grid.Column="0" Margin="7,0,7,10" FontFamily="Segoe UI Light"/>
+            </Grid>
+            <Grid Grid.Row="1" Grid.Column="0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="#FFDA552C" Margin="3">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <TextBlock FontFamily="{StaticResource FontAwesome}" Text="&#xf085;" FontSize="40" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock Text="CLOUD INTEGRATION" VerticalAlignment="Bottom" Grid.Row="1" Grid.Column="0" Margin="7,4"/>
+                <TextBlock Text="Use plugins" VerticalAlignment="Bottom" Grid.Row="2" Grid.Column="0" Margin="7,0,7,10" FontFamily="Segoe UI Light"/>
+            </Grid>
+            <Grid Grid.Row="1" Grid.Column="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="#FFFF8C01" Margin="3">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <TextBlock FontFamily="{StaticResource FontAwesome}" Text="&#xf185;" FontSize="40" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock Text="EXAMPLE" VerticalAlignment="Bottom" Grid.Row="1" Grid.Column="0" Margin="7,4"/>
+                <TextBlock Text="Use location" VerticalAlignment="Bottom" Grid.Row="2" Grid.Column="0" Margin="7,0,7,10" FontFamily="Segoe UI Light"/>
+            </Grid>
+            <Grid Grid.Row="1" Grid.Column="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="#FF00A000" Margin="3">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <TextBlock FontFamily="{StaticResource FontAwesome}" Text="&#xf080;" FontSize="40" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock Text="STATS" VerticalAlignment="Bottom" Grid.Row="1" Grid.Column="0" Margin="7,4"/>
+                <TextBlock Text="See the data" VerticalAlignment="Bottom" Grid.Row="2" Grid.Column="0" Margin="7,0,7,10" FontFamily="Segoe UI Light"/>
+            </Grid>
+
+        </Grid>
+    </Grid></Page>
