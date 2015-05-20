@@ -43,15 +43,11 @@ namespace Welcome_Project_Windows
             {
                 case ApplicationViewOrientation.Landscape:
                     PivotGrid(X, Y);
-                    buttons.Margin = new Thickness(30);
-                    logo.Margin = new Thickness(5);
 
                     break;
 
                 case ApplicationViewOrientation.Portrait:
                     PivotGrid(Y, X);
-                    buttons.Margin = new Thickness(15);
-                    logo.Margin = new Thickness(15);
 
                     break;
             }

@@ -13,32 +13,28 @@
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="{ThemeResource GutterMarginWindows}"/>
                 <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="{ThemeResource GutterMarginPhone}" />
             </Grid.ColumnDefinitions>
 
-            <Button VerticalAlignment="Top" BorderThickness="0" Click="BackButton_Click">
-                <Image Source="icons/back-arrow@2x.png" Width="60" Height="60"/>
-            </Button>
+            <Image Source="icons/back-arrow@2x.png" Width="60" Height="60" VerticalAlignment="Top" Tapped="BackButton_Click"/>
             <Grid Grid.Column="1">
                 <StackPanel>
-                    <Grid>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="{ThemeResource GutterMarginPhone}"/>
-                            <ColumnDefinition Width="*" />
-                        </Grid.ColumnDefinitions>
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="*"/>
-                            <RowDefinition Height="*"/>
-                        </Grid.RowDefinitions>
-                        <Button VerticalAlignment="Top" BorderThickness="0" Grid.Column="0" Grid.RowSpan="2" Visibility="{ThemeResource VisibleWhenPhone}" Click="BackButton_Click">
-                            <Image Source="icons/back-arrow@2x.png" Width="60" Height="60"/>
-                        </Button>
-                        <TextBlock FontFamily="Segoe UI Semilight" FontSize="24" Grid.Column="1">DATA ACTION</TextBlock>
-                        <TextBlock FontSize="20" Grid.Column="1" Grid.Row="1">Use MongoDB</TextBlock>
-                    </Grid>
-                    <StackPanel Margin="{ThemeResource TextMargin}">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="icons/back-arrow@2x.png" Width="60" Height="60" Visibility="{ThemeResource VisibleWhenPhone}" Tapped="BackButton_Click"/>
+                        <StackPanel Margin="{ThemeResource TitleMargin}">
+                            <TextBlock FontFamily="Segoe UI Semilight" FontSize="24" Grid.Column="1">DATA ACTION</TextBlock>
+                            <TextBlock FontSize="20" Grid.Column="1" Grid.Row="1">Use MongoDB</TextBlock>
+                        </StackPanel>
+                    </StackPanel>
+                    <StackPanel Margin="0,40,0,0">
                         <TextBlock TextWrapping="Wrap" >Enter your name and then tap the button to save your name in our cloud database</TextBlock>
-                        <TextBox Name="NameField"/>
-                        <Button Click="Save" BorderThickness="0" Background="#FF9575E6" Margin="0,20,0,0">Save</Button>
+                        <TextBox Name="NameField" Margin="0,20,0,0"/>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="{ThemeResource ButtonWith}"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <Button Click="Save" BorderThickness="0" Background="#FF9575E6" Margin="0,10,0,0" HorizontalAlignment="Stretch" >Save</Button>
+                        </Grid>
                         <StackPanel Name="result" Margin="0,10" Visibility="Collapsed">
                             <StackPanel Background="#FF107B10">
                                 <TextBlock Margin="20" TextWrapping="Wrap">Now go to the Data Browser section of the App Studio and see if you can find your name stored there.</TextBlock>
