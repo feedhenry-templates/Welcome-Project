@@ -5,6 +5,12 @@
     xmlns:local="using:Welcome_Project_Windows">
 
     <Application.Resources>
-        <FontFamily x:Key="FontAwesome">/Library/fontawesome-webfont.ttf#FontAwesome</FontFamily>
+    	<ResourceDictionary>
+    		<ResourceDictionary.MergedDictionaries>
+    			<ResourceDictionary Source="ms-appx:///Platform.xaml"/>
+    		</ResourceDictionary.MergedDictionaries>
+    		<FontFamily x:Key="FontAwesome">/Library/fontawesome-webfont.ttf#FontAwesome</FontFamily>
+    	</ResourceDictionary>
     </Application.Resources>
+    
 </Application>

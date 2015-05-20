@@ -6,23 +6,36 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    FontSize="20" FontFamily="Segoe UI Light">
+    FontSize="{ThemeResource ThemeFontSize}" FontFamily="Segoe UI">
 
     <StackPanel Background="#FF009BAD">
-        <Grid Margin="30">
+        <Grid Margin="{ThemeResource BodyMargin}">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="120" />
+                <ColumnDefinition Width="{ThemeResource GutterMarginWindows}"/>
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
 
-            <Button VerticalAlignment="Top" BorderThickness="0">
-                <Image Source="icons/back-arrow@2x.png" Width="80" Height="80"/>
+            <Button VerticalAlignment="Top" BorderThickness="0" Click="BackButton_Click">
+                <Image Source="icons/back-arrow@2x.png" Width="60" Height="60"/>
             </Button>
             <Grid Grid.Column="1">
                 <StackPanel>
-                    <TextBlock FontFamily="Segoe UI" FontSize="24">CLOUD ACTION</TextBlock>
-                    <TextBlock>Try it now</TextBlock>
-                    <StackPanel Margin="20">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="{ThemeResource GutterMarginPhone}"/>
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Button VerticalAlignment="Top" BorderThickness="0" Grid.Column="0" Grid.RowSpan="2" Visibility="{ThemeResource VisibleWhenPhone}" Click="BackButton_Click">
+                            <Image Source="icons/back-arrow@2x.png" Width="60" Height="60"/>
+                        </Button>
+                        <TextBlock FontFamily="Segoe UI Semilight" FontSize="24" Grid.Column="1">CLOUD ACTION</TextBlock>
+                        <TextBlock FontSize="20" Grid.Column="1" Grid.Row="1">Try it now</TextBlock>
+                    </Grid>
+                    <StackPanel Margin="{ThemeResource TextMargin}">
                         <TextBlock TextWrapping="Wrap" >This client App is now connected to its matching Node.js cloud code on FeedHenry.<LineBreak/> Tap the button to request a response from the cloud.</TextBlock>
                         <Button Click="Call_Cloud" BorderThickness="0" Background="#FF33AFBD" Margin="0,20,0,0">Call Cloud</Button>
                         <StackPanel Name="result" Margin="0,10" Visibility="Collapsed">

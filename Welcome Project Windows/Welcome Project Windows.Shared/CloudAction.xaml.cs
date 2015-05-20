@@ -30,5 +30,13 @@ namespace Welcome_Project_Windows
             PropertyChanged(this, new PropertyChangedEventArgs("Message"));
             result.Visibility = Visibility.Visible;
         }
+
+        private void BackButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (Frame.CanGoBack)
+            {
+                Frame.GoBack();
+            }
+        }
     }
 }
