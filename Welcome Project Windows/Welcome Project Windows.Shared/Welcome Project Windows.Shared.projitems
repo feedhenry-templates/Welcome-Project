@@ -28,6 +28,9 @@
     <Compile Include="$(MSBuildThisFileDirectory)NodeAction.xaml.cs">
       <DependentUpon>NodeAction.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)WeatherAction.xaml.cs">
+      <DependentUpon>WeatherAction.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="$(MSBuildThisFileDirectory)fhconfig.json" />
@@ -61,6 +64,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="$(MSBuildThisFileDirectory)NodeAction.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)WeatherAction.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

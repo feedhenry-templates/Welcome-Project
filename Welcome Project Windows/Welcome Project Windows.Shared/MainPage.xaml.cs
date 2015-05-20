@@ -41,5 +41,11 @@ namespace Welcome_Project_Windows
         {
             Frame.Navigate(typeof(IntegrationAction));
         }
+
+        private void Example_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(WeatherAction));
+        }
+
     }
 }

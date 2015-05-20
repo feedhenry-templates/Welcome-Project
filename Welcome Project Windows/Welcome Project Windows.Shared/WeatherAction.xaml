@@ -1,0 +1,81 @@
+﻿<Page
+    x:Class="Welcome_Project_Windows.WeatherAction"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Welcome_Project_Windows"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    FontSize="{ThemeResource ThemeFontSize}" FontFamily="Segoe UI">
+
+    <ScrollViewer>
+        <StackPanel Background="#FFFF8C01">
+            <Grid Margin="{ThemeResource BodyMargin}">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="{ThemeResource GutterMarginWindows}"/>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="{ThemeResource GutterMarginPhone}" />
+                </Grid.ColumnDefinitions>
+
+                <Image Source="icons/back-arrow@2x.png" Width="60" Height="60" VerticalAlignment="Top" Tapped="BackButton_Click"/>
+                <Grid Grid.Column="1">
+                    <StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="icons/back-arrow@2x.png" Width="60" Height="60" Visibility="{ThemeResource VisibleWhenPhone}" Tapped="BackButton_Click"/>
+                            <StackPanel Margin="{ThemeResource TitleMargin}">
+                                <TextBlock FontFamily="Segoe UI Semilight" FontSize="24" Grid.Column="1">
+									<Run Text="EXAMPLE"/>
+                                </TextBlock>
+                                <TextBlock FontSize="20" Grid.Column="1" Grid.Row="1">
+									<Run Text="Use location"/>
+                                </TextBlock>
+                            </StackPanel>
+                        </StackPanel>
+                        <StackPanel Margin="0,40,0,0">
+                            <TextBlock TextWrapping="Wrap" >
+								<Run Text="This client App is now connected to its matching Node.js cloud code on FeedHenry. Tap the button to request a response from the cloud."/>
+                            </TextBlock>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="{ThemeResource ButtonWith}"/>
+                                </Grid.ColumnDefinitions>
+                                <Button Click="Location" BorderThickness="0" Background="#33000000" Margin="0,20,0,0" HorizontalAlignment="Stretch" Content="My Location"/>
+                            </Grid>
+                            <StackPanel x:Name="result" Margin="0,10" Visibility="Collapsed">
+                                <StackPanel Background="#FF107B10" Orientation="Horizontal">
+                                    <TextBlock Margin="20" Text="{Binding Message}"/>
+                                </StackPanel>
+                                <TextBlock TextWrapping="Wrap" Margin="0,20">
+									Now we are going to use that location to request weather information from an online web-service via our cloud code. Tap the button to do this.
+                                </TextBlock>
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="{ThemeResource ButtonWith}"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Button Click="Call_Cloud" BorderThickness="0" Background="#33000000" Margin="0,20,0,0" HorizontalAlignment="Stretch" Content="Weather Info"/>
+                                </Grid>
+                                <ListView ItemsSource="{Binding WeatherData}" HorizontalAlignment="Center">
+                                    <ListView.ItemTemplate>
+                                        <DataTemplate>
+                                            <StackPanel Width="100">
+                                                <Image Source="{Binding icon}"/>
+                                                <TextBlock HorizontalAlignment="Center" Text="{Binding date}"/>
+                                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                                    <TextBlock Text="{Binding low}"/>
+                                                    <TextBlock Text="-"/>
+                                                    <TextBlock Text="{Binding high}"/>
+                                                    <TextBlock Text="(°C)"/>
+                                                </StackPanel>
+                                                <TextBlock HorizontalAlignment="Center" Text="{Binding desc}"/>
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </ListView.ItemTemplate>
+                                </ListView>
+                            </StackPanel>
+                        </StackPanel>
+                    </StackPanel>
+                </Grid>
+            </Grid>
+        </StackPanel>
+    </ScrollViewer>
+</Page>

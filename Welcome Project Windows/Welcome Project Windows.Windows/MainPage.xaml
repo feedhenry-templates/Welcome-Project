@@ -90,7 +90,7 @@
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
-                <TextBlock FontFamily="{StaticResource FontAwesome}" Text="&#xf185;" FontSize="85" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock FontFamily="{StaticResource FontAwesome}" Text="&#xf185;" FontSize="85" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Tapped="Example_Tapped"/>
                 <TextBlock Text="EXAMPLE" VerticalAlignment="Bottom" Grid.Row="1" Grid.Column="0" Margin="7,4"/>
                 <TextBlock Text="Use location" VerticalAlignment="Bottom" Grid.Row="2" Grid.Column="0" Margin="7,0,7,10" FontFamily="Segoe UI Light"/>
             </Grid>
