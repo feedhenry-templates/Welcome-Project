@@ -33,7 +33,7 @@
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="{ThemeResource ButtonWith}"></ColumnDefinition>
                             </Grid.ColumnDefinitions>
-                            <Button Click="Save" BorderThickness="0" Background="#FF9575E6" Margin="0,10,0,0" HorizontalAlignment="Stretch" >Save</Button>
+                            <Button Click="Save" BorderThickness="0" Background="#33000000" Margin="0,10,0,0" HorizontalAlignment="Stretch" >Save</Button>
                         </Grid>
                         <StackPanel Name="result" Margin="0,10" Visibility="Collapsed">
                             <StackPanel Background="#FF107B10">
