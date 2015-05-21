@@ -28,6 +28,9 @@
     <Compile Include="$(MSBuildThisFileDirectory)NodeAction.xaml.cs">
       <DependentUpon>NodeAction.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)StatsAction.xaml.cs">
+      <DependentUpon>StatsAction.xaml</DependentUpon>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)WeatherAction.xaml.cs">
       <DependentUpon>WeatherAction.xaml</DependentUpon>
     </Compile>
@@ -64,6 +67,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="$(MSBuildThisFileDirectory)NodeAction.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)StatsAction.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

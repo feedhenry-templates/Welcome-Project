@@ -1,0 +1,39 @@
+﻿<Page
+    x:Class="Welcome_Project_Windows.StatsAction"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Welcome_Project_Windows"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    FontSize="{ThemeResource ThemeFontSize}" FontFamily="Segoe UI">
+
+    <StackPanel Background="#FF00A000">
+        <Grid Margin="{ThemeResource BodyMargin}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="{ThemeResource GutterMarginWindows}"/>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="{ThemeResource GutterMarginPhone}" />
+            </Grid.ColumnDefinitions>
+
+            <Image Source="icons/back-arrow@2x.png" Width="60" Height="60" VerticalAlignment="Top" Tapped="BackButton_Click"/>
+            <Grid Grid.Column="1">
+                <StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="icons/back-arrow@2x.png" Width="60" Height="60" Visibility="{ThemeResource VisibleWhenPhone}" Tapped="BackButton_Click"/>
+                        <StackPanel Margin="{ThemeResource TitleMargin}">
+                            <TextBlock FontFamily="Segoe UI Semilight" FontSize="24" Grid.Column="1">STATS</TextBlock>
+                            <TextBlock FontSize="20" Grid.Column="1" Grid.Row="1">See the data</TextBlock>
+                        </StackPanel>
+                    </StackPanel>
+                    <StackPanel Margin="0,40,0,0">
+                        <TextBlock TextWrapping="Wrap" >In addition to all of our App install/usage Analytics, you can also instrument your 
+                            cloud code to see exactly how it is performing. Go to the Stats section of the 
+                            Studio and see if your device has been detected.</TextBlock>
+                    </StackPanel>
+                </StackPanel>
+            </Grid>
+        </Grid>
+
+    </StackPanel>
+</Page>

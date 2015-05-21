@@ -47,5 +47,10 @@ namespace Welcome_Project_Windows
             Frame.Navigate(typeof(WeatherAction));
         }
 
+        private void Stats_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(StatsAction));
+        }
+
     }
 }

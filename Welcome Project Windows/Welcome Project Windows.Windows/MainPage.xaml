@@ -94,7 +94,7 @@
                 <TextBlock Text="EXAMPLE" VerticalAlignment="Bottom" Grid.Row="1" Grid.Column="0" Margin="7,4"/>
                 <TextBlock Text="Use location" VerticalAlignment="Bottom" Grid.Row="2" Grid.Column="0" Margin="7,0,7,10" FontFamily="Segoe UI Light"/>
             </Grid>
-            <Grid Grid.Row="2" Grid.Column="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="#FF00A000" Margin="10">
+            <Grid Grid.Row="2" Grid.Column="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="#FF00A000" Margin="10" Tapped="Stats_Tapped">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
