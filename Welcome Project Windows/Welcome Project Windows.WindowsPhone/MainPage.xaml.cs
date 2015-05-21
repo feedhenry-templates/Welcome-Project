@@ -1,10 +1,5 @@
-﻿using FHSDK81.Phone;
-using System.Diagnostics;
-using Windows.UI.ViewManagement;
-using Windows.UI.Xaml;
+﻿using Windows.Graphics.Display;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Navigation;
 
 namespace Welcome_Project_Windows
 {
@@ -13,17 +8,18 @@ namespace Welcome_Project_Windows
         private const int X = 3;
         private const int Y = 2;
 
-        partial void Current_SizeChanged(object sender, Windows.UI.Core.WindowSizeChangedEventArgs e)
+        partial void OrientationChanged(DisplayInformation info, object sender)
         {
-            var CurrentViewState = ApplicationView.GetForCurrentView().Orientation;
-            switch (CurrentViewState)
+            switch (info.CurrentOrientation)
             {
-                case ApplicationViewOrientation.Landscape:
+                case DisplayOrientations.Landscape:
+                case DisplayOrientations.LandscapeFlipped:
                     PivotGrid(X, Y);
 
                     break;
 
-                case ApplicationViewOrientation.Portrait:
+                case DisplayOrientations.Portrait:
+                case DisplayOrientations.PortraitFlipped:
                     PivotGrid(Y, X);
 
                     break;

@@ -1,4 +1,5 @@
 ﻿using FHSDK81.Phone;
+using Windows.Graphics.Display;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Input;
@@ -9,10 +10,9 @@ namespace Welcome_Project_Windows
     {
         public MainPage()
         {
-            Window.Current.SizeChanged += Current_SizeChanged;
             this.InitializeComponent();
             this.InitApp();
-            Current_SizeChanged(null, null);
+            DisplayInformation.GetForCurrentView().OrientationChanged += OrientationChanged;
         }
 
         private async void InitApp()
@@ -20,7 +20,12 @@ namespace Welcome_Project_Windows
             await FHClient.Init();
         }
 
-        partial void Current_SizeChanged(object sender, Windows.UI.Core.WindowSizeChangedEventArgs e);
+        protected override void OnNavigatedTo(Windows.UI.Xaml.Navigation.NavigationEventArgs e)
+        {
+            OrientationChanged(DisplayInformation.GetForCurrentView(), null);            
+        }
+
+        partial void OrientationChanged(DisplayInformation info, object sender);
 
         private void Cloud_Tapped(object sender, TappedRoutedEventArgs e)
         {
