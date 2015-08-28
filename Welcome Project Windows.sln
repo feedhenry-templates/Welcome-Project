@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Welcome Project Windows", "Welcome Project Windows", "{49CBC1B0-C894-40C7-8296-ED5F265878FB}"
 EndProject
@@ -10,10 +10,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Welcome Project Windows.Windows", "Welcome Project Windows\Welcome Project Windows.Windows\Welcome Project Windows.Windows.csproj", "{4231708A-EA19-409E-A6AB-DEA07501DF77}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Welcome Project Windows.WindowsPhone", "Welcome Project Windows\Welcome Project Windows.WindowsPhone\Welcome Project Windows.WindowsPhone.csproj", "{0F52C621-CA91-4560-97CA-4746E9375A78}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FHSDK", "..\fh-dotnet-sdk\FHSDK\FHSDK.csproj", "{AD87DBE9-8247-47CD-B6D2-16B63CBBC9E7}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FHSDKPhone81", "..\fh-dotnet-sdk\FHSDKPhone81\FHSDKPhone81.csproj", "{71DD40E5-AB2F-4102-AEA6-BD1C33651A1A}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
@@ -76,30 +72,6 @@ Global
 		{0F52C621-CA91-4560-97CA-4746E9375A78}.Release|x86.ActiveCfg = Release|x86
 		{0F52C621-CA91-4560-97CA-4746E9375A78}.Release|x86.Build.0 = Release|x86
 		{0F52C621-CA91-4560-97CA-4746E9375A78}.Release|x86.Deploy.0 = Release|x86
-		{AD87DBE9-8247-47CD-B6D2-16B63CBBC9E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AD87DBE9-8247-47CD-B6D2-16B63CBBC9E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AD87DBE9-8247-47CD-B6D2-16B63CBBC9E7}.Debug|ARM.ActiveCfg = Debug|Any CPU
-		{AD87DBE9-8247-47CD-B6D2-16B63CBBC9E7}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{AD87DBE9-8247-47CD-B6D2-16B63CBBC9E7}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{AD87DBE9-8247-47CD-B6D2-16B63CBBC9E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AD87DBE9-8247-47CD-B6D2-16B63CBBC9E7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AD87DBE9-8247-47CD-B6D2-16B63CBBC9E7}.Release|ARM.ActiveCfg = Release|Any CPU
-		{AD87DBE9-8247-47CD-B6D2-16B63CBBC9E7}.Release|x64.ActiveCfg = Release|Any CPU
-		{AD87DBE9-8247-47CD-B6D2-16B63CBBC9E7}.Release|x86.ActiveCfg = Release|Any CPU
-		{71DD40E5-AB2F-4102-AEA6-BD1C33651A1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{71DD40E5-AB2F-4102-AEA6-BD1C33651A1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{71DD40E5-AB2F-4102-AEA6-BD1C33651A1A}.Debug|ARM.ActiveCfg = Debug|ARM
-		{71DD40E5-AB2F-4102-AEA6-BD1C33651A1A}.Debug|ARM.Build.0 = Debug|ARM
-		{71DD40E5-AB2F-4102-AEA6-BD1C33651A1A}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{71DD40E5-AB2F-4102-AEA6-BD1C33651A1A}.Debug|x86.ActiveCfg = Debug|x86
-		{71DD40E5-AB2F-4102-AEA6-BD1C33651A1A}.Debug|x86.Build.0 = Debug|x86
-		{71DD40E5-AB2F-4102-AEA6-BD1C33651A1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{71DD40E5-AB2F-4102-AEA6-BD1C33651A1A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{71DD40E5-AB2F-4102-AEA6-BD1C33651A1A}.Release|ARM.ActiveCfg = Release|ARM
-		{71DD40E5-AB2F-4102-AEA6-BD1C33651A1A}.Release|ARM.Build.0 = Release|ARM
-		{71DD40E5-AB2F-4102-AEA6-BD1C33651A1A}.Release|x64.ActiveCfg = Release|Any CPU
-		{71DD40E5-AB2F-4102-AEA6-BD1C33651A1A}.Release|x86.ActiveCfg = Release|x86
-		{71DD40E5-AB2F-4102-AEA6-BD1C33651A1A}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
