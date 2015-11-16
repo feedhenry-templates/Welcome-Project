@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.40629.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Welcome Project Windows", "Welcome Project Windows", "{49CBC1B0-C894-40C7-8296-ED5F265878FB}"
 EndProject
@@ -11,9 +11,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Welcome Project Windows.Win
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Welcome Project Windows.WindowsPhone", "Welcome Project Windows\Welcome Project Windows.WindowsPhone\Welcome Project Windows.WindowsPhone.csproj", "{0F52C621-CA91-4560-97CA-4746E9375A78}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Welcome Project Winows.Universal", "Welcome Project Windows\Welcome Project Winows.Universal\Welcome Project Winows.Universal.csproj", "{D5EF22EE-CF1A-48D8-94AF-1E9C74CED4C5}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		Welcome Project Windows\Welcome Project Windows.Shared\Welcome Project Windows.Shared.projitems*{0f52c621-ca91-4560-97ca-4746e9375a78}*SharedItemsImports = 4
+		Welcome Project Windows\Welcome Project Windows.Shared\Welcome Project Windows.Shared.projitems*{d5ef22ee-cf1a-48d8-94af-1e9c74ced4c5}*SharedItemsImports = 4
 		Welcome Project Windows\Welcome Project Windows.Shared\Welcome Project Windows.Shared.projitems*{9a7bc193-abd5-4e99-88c8-734a50b8813f}*SharedItemsImports = 13
 		Welcome Project Windows\Welcome Project Windows.Shared\Welcome Project Windows.Shared.projitems*{4231708a-ea19-409e-a6ab-dea07501df77}*SharedItemsImports = 4
 	EndGlobalSection
@@ -72,6 +75,26 @@ Global
 		{0F52C621-CA91-4560-97CA-4746E9375A78}.Release|x86.ActiveCfg = Release|x86
 		{0F52C621-CA91-4560-97CA-4746E9375A78}.Release|x86.Build.0 = Release|x86
 		{0F52C621-CA91-4560-97CA-4746E9375A78}.Release|x86.Deploy.0 = Release|x86
+		{D5EF22EE-CF1A-48D8-94AF-1E9C74CED4C5}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{D5EF22EE-CF1A-48D8-94AF-1E9C74CED4C5}.Debug|ARM.ActiveCfg = Debug|ARM
+		{D5EF22EE-CF1A-48D8-94AF-1E9C74CED4C5}.Debug|ARM.Build.0 = Debug|ARM
+		{D5EF22EE-CF1A-48D8-94AF-1E9C74CED4C5}.Debug|ARM.Deploy.0 = Debug|ARM
+		{D5EF22EE-CF1A-48D8-94AF-1E9C74CED4C5}.Debug|x64.ActiveCfg = Debug|x64
+		{D5EF22EE-CF1A-48D8-94AF-1E9C74CED4C5}.Debug|x64.Build.0 = Debug|x64
+		{D5EF22EE-CF1A-48D8-94AF-1E9C74CED4C5}.Debug|x64.Deploy.0 = Debug|x64
+		{D5EF22EE-CF1A-48D8-94AF-1E9C74CED4C5}.Debug|x86.ActiveCfg = Debug|x86
+		{D5EF22EE-CF1A-48D8-94AF-1E9C74CED4C5}.Debug|x86.Build.0 = Debug|x86
+		{D5EF22EE-CF1A-48D8-94AF-1E9C74CED4C5}.Debug|x86.Deploy.0 = Debug|x86
+		{D5EF22EE-CF1A-48D8-94AF-1E9C74CED4C5}.Release|Any CPU.ActiveCfg = Release|x86
+		{D5EF22EE-CF1A-48D8-94AF-1E9C74CED4C5}.Release|ARM.ActiveCfg = Release|ARM
+		{D5EF22EE-CF1A-48D8-94AF-1E9C74CED4C5}.Release|ARM.Build.0 = Release|ARM
+		{D5EF22EE-CF1A-48D8-94AF-1E9C74CED4C5}.Release|ARM.Deploy.0 = Release|ARM
+		{D5EF22EE-CF1A-48D8-94AF-1E9C74CED4C5}.Release|x64.ActiveCfg = Release|x64
+		{D5EF22EE-CF1A-48D8-94AF-1E9C74CED4C5}.Release|x64.Build.0 = Release|x64
+		{D5EF22EE-CF1A-48D8-94AF-1E9C74CED4C5}.Release|x64.Deploy.0 = Release|x64
+		{D5EF22EE-CF1A-48D8-94AF-1E9C74CED4C5}.Release|x86.ActiveCfg = Release|x86
+		{D5EF22EE-CF1A-48D8-94AF-1E9C74CED4C5}.Release|x86.Build.0 = Release|x86
+		{D5EF22EE-CF1A-48D8-94AF-1E9C74CED4C5}.Release|x86.Deploy.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -80,5 +103,6 @@ Global
 		{9A7BC193-ABD5-4E99-88C8-734A50B8813F} = {49CBC1B0-C894-40C7-8296-ED5F265878FB}
 		{4231708A-EA19-409E-A6AB-DEA07501DF77} = {49CBC1B0-C894-40C7-8296-ED5F265878FB}
 		{0F52C621-CA91-4560-97CA-4746E9375A78} = {49CBC1B0-C894-40C7-8296-ED5F265878FB}
+		{D5EF22EE-CF1A-48D8-94AF-1E9C74CED4C5} = {49CBC1B0-C894-40C7-8296-ED5F265878FB}
 	EndGlobalSection
 EndGlobal
