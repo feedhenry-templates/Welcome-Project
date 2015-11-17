@@ -5,14 +5,14 @@
 
     <x:Double x:Key="ThemeFontSize">20</x:Double>
 
-    <Thickness x:Key="BodyMargin">12,40</Thickness>
-    <Thickness x:Key="TitleMargin">20,0,0,0</Thickness>
-    
-    <GridLength x:Key="GutterMarginWindows">0</GridLength>
-    <GridLength x:Key="GutterMarginPhone">0</GridLength>
+    <Thickness x:Key="BodyMargin">30</Thickness>
+    <Thickness x:Key="TitleMargin">0</Thickness>
 
-    <GridLength x:Key="ButtonWith">*</GridLength>
-    
-    <Visibility x:Key="VisibleWhenPhone">Visible</Visibility>
-    <Visibility x:Key="VisibleWhenWindows">Collapsed</Visibility>
+    <GridLength x:Key="GutterMarginWindows">120</GridLength>
+    <GridLength x:Key="GutterMarginPhone">*</GridLength>
+
+    <GridLength x:Key="ButtonWith">120</GridLength>
+
+    <Visibility x:Key="VisibleWhenPhone">Collapsed</Visibility>
+    <Visibility x:Key="VisibleWhenWindows">Visible</Visibility>
 </ResourceDictionary>

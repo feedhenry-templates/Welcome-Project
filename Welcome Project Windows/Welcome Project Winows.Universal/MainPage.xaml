@@ -6,7 +6,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    FontSize="20" FontFamily="Segoe UI">
+    FontSize="20" FontFamily="Segoe UI" RequestedTheme="Dark">
 
     <Grid Name="grid">
         <Grid.Background>
@@ -19,7 +19,7 @@
 
         <Image Source="icons/logo@2x.png" VerticalAlignment="Center" Margin="40,0,80,0" Grid.Column="0" Grid.Row="0"/>
 
-        <Grid Name="buttons" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Column="1" Grid.Row="1" Margin="30">
+        <Grid Name="buttons" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Column="1" Margin="30">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition />
                 <ColumnDefinition />
